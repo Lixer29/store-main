@@ -1,0 +1,33 @@
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  height: 100vh;
+}
+
+body {
+  background: no-repeat center url('https://wallpapercrafter.com/desktop/20765-trees-green-fog-forest-shroud-top-view-4k.jpg');
+}
+
+.page-link {
+  color: green;
+  :focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.active > .page-link {
+  background-color: green!important;
+  border-color: green;
+}
+
